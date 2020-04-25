@@ -4,6 +4,15 @@
   font-family: 'Pangolin', cursive;
   font-size: 27.09pt;
 }
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: #d4d4d4;
+}
+
+::selection {
+  color: white;
+  background: #686565;
+}
 body {
   background-image: url('/background.jpg');
   background-size: cover;
