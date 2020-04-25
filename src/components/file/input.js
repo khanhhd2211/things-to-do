@@ -66,8 +66,8 @@ class Input extends Component {
             if (value !== '') {
                 const { thingsToDo } = this.state;
                 const newThings = [
-                    { thingToDo: value },
-                    ...thingsToDo
+                    ...thingsToDo,
+                    { thingToDo: value }
                 ];
                 localStorage.setItem('thingsToDo', JSON.stringify(newThings));
                 this.setState({

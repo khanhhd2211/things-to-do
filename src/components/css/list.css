@@ -41,6 +41,7 @@
 .List .after-btn {
     display: flex;
     float: right;
+    padding-bottom: 30px;
 }
 .List .after-btn .all {
     font-size: 18pt;
