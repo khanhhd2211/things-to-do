@@ -1,0 +1,32 @@
+.Input {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-bottom: 20px;
+}
+.Input input {
+    margin: 0 20px 0 20px
+}
+.Input .todo-input {
+    border: none;
+    border-bottom: 3px solid #576A62;
+    border-radius: 3px;
+    background-color: transparent;
+    outline: none;
+}
+.Input img {
+    pointer-events: none
+}
+@media (max-width: 500px) {
+    .Input img {
+        display: none;
+    }
+    .Input input {
+        width: 90%;
+    }
+}
+@media (max-width: 370px) {
+    * {
+        font-size: 22.8pt
+    }
+}

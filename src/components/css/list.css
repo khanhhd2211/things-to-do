@@ -1,0 +1,88 @@
+.List {
+    -webkit-user-select: text;
+    -khtml-user-select: text;
+    -moz-user-select: text;
+    -o-user-select: text;
+    user-select: text;
+    width: 560px;
+}
+.List .item {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    border-bottom: 3px solid #576A62;
+}
+.item .text {
+    word-wrap: break-word;
+    width: 480px;
+}
+.List .item .check-box {
+    width: 23px;
+    height: 23px;
+    background-image: url('/un-check.svg');
+    background-size: cover;
+    margin: 0 20px 0 3px;
+    cursor: pointer;
+}
+.List .item .close {
+    width: 22px;
+    height: 22px;
+    background-image: url('/close.svg');
+    background-size: cover;
+    margin: 0 3px 0 7px;
+    cursor: pointer;
+}
+.List .item .checked {
+    background-image: url('/check.svg');
+}
+.List .item-checked {
+    text-decoration: line-through;
+}
+.List .after-btn {
+    display: flex;
+    float: right;
+}
+.List .after-btn .all {
+    font-size: 18pt;
+    margin-left: 10px;
+    border-bottom: 2px solid #576A62;
+    cursor: pointer;
+}
+.List .none-display {
+    display: none;
+}
+.before-btn {
+    display: flex;
+    margin-left: 160px;
+}
+.before-btn .btn {
+    font-size: 18pt;
+    margin-right: 10px;
+}
+.before-btn .activated {
+    border-bottom: 2px solid #576A62;
+}
+
+
+@media (max-width: 500px) {
+    .List {
+        width: 330px;
+    }
+    .item .text {
+        width: 250px
+    }
+    .before-btn {
+        margin-left: 25px;
+    }
+}
+@media (max-width: 370px) {
+    .List {
+        width: 270px;
+    }
+    .item .text {
+        width: 190px
+    }
+    .List .after-btn .all {
+        font-size: 16pt
+    }
+}
